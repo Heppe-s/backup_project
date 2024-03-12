@@ -1,18 +1,35 @@
-<div class="container">
-  <h1>Welcome to Tauri + Angular!</h1>
-  <div class="row">
-    <a href="https://tauri.app" target="_blank">
-      <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
-    </a>
-    <a href="https://angular.io" target="_blank">
-      <img src="/assets/angular.svg" class="logo angular" alt="Angular logo" />
-    </a>
-  </div>
-  <p>Click on the logos to learn more about the frameworks</p>
+<!DOCTYPE html>
+<html lang="en">
 
-  <form class="row" (submit)="greet($event, greetInput.value)">
-    <input #greetInput id="greet-input" placeholder="Enter a name..." />
-    <button type="submit">Greet</button>
-  </form>
-  <p>{{ greetingMessage }}</p>
-</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Import/Export Cloud save</title>
+  <style src="app.component.css"></style>
+
+</head>
+
+<body>
+  <header>
+    <h1>Import - Export Save to/from Cloud</h1>
+  </header>
+  <div style="display: flex; justify-content: center;">
+    <input type="text" id="fileName" placeholder="Digite o nome do save">
+  </div>
+  <p></p>
+  <div id="fileInfo">Arquivo selecionado: Nenhum</div>
+  
+
+  <div style="display: flex; justify-content: center;">
+    <button onclick="importarNuvem()">Importar da Nuvem</button>
+    <button onclick="exportarNuvem()">Exportar para Nuvem</button>
+
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <button onclick="importarLocal()">Importar Local</button>
+    <button onclick="exportarLocal()">Exportar Local</button>
+  </div>
+
+  <script src="app.component.js"></script>
+</body>
+</html>
