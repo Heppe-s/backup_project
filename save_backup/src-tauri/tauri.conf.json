@@ -12,6 +12,10 @@
   "tauri": {
     "allowlist": {
       "all": false,
+      "fs": {
+        "all": true,
+        "scope": ["$DATA/.minecraft/**"]
+      },
       "shell": {
         "all": false,
         "open": true

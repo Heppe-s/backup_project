@@ -1,35 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<header>
+  <h1>Import - Export Save to/from Cloud</h1>
+</header>
+<div style="display: flex; justify-content: center;">
+  <input type="text" id="fileName" placeholder="Digite o nome do save">
+</div>
+<p></p>
+<div id="fileInfo">Arquivo selecionado: Nenhum</div>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Import/Export Cloud save</title>
-  <style src="app.component.css"></style>
 
-</head>
+<div style="display: flex; justify-content: center;">
+  <button (click)="importarNuvem()">Importar da Nuvem</button>
+  <button (click)="exportarNuvem()">Exportar para Nuvem</button>
+  <button (click)="test()">teste</button>
 
-<body>
-  <header>
-    <h1>Import - Export Save to/from Cloud</h1>
-  </header>
-  <div style="display: flex; justify-content: center;">
-    <input type="text" id="fileName" placeholder="Digite o nome do save">
-  </div>
-  <p></p>
-  <div id="fileInfo">Arquivo selecionado: Nenhum</div>
-  
-
-  <div style="display: flex; justify-content: center;">
-    <button onclick="importarNuvem()">Importar da Nuvem</button>
-    <button onclick="exportarNuvem()">Exportar para Nuvem</button>
-
-  </div>
-  <div style="display: flex; justify-content: center;">
-    <button onclick="importarLocal()">Importar Local</button>
-    <button onclick="exportarLocal()">Exportar Local</button>
-  </div>
-
-  <script src="app.component.js"></script>
-</body>
-</html>
+</div>
+<div style="display: flex; justify-content: center;">
+  <button (click)="importarLocal()">Importar Local</button>
+  <button (click)="exportarLocal()">Exportar Local</button>
+</div>
