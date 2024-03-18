@@ -1,0 +1,20 @@
+<header>
+  <h1>Import - Export Save to/from Cloud</h1>
+</header>
+<div style="display: flex; justify-content: center;">
+  <input type="text" id="fileName" placeholder="Digite o nome do save">
+</div>
+<p></p>
+<div id="fileInfo">Arquivo selecionado: Nenhum</div>
+
+
+<div style="display: flex; justify-content: center;">
+  <button (click)="importarNuvem()">Importar da Nuvem</button>
+  <button (click)="exportarNuvem()">Exportar para Nuvem</button>
+  <button (click)="test()">teste</button>
+
+</div>
+<div style="display: flex; justify-content: center;">
+  <button (click)="importarLocal()">Importar Local</button>
+  <button (click)="exportarLocal()">Exportar Local</button>
+</div>
