@@ -9,7 +9,6 @@ import { BaseDirectory, readDir } from "@tauri-apps/api/fs";
   standalone: true,
   imports: [CommonModule, RouterOutlet],
   templateUrl: "./app.component.html",
-  styleUrl: "./app.component.css",
 })
 export class AppComponent {
   greetingMessage = "";

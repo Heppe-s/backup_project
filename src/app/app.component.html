@@ -1,20 +1,25 @@
-<header>
-  <h1>Import - Export Save to/from Cloud</h1>
-</header>
-<div style="display: flex; justify-content: center;">
-  <input type="text" id="fileName" placeholder="Digite o nome do save">
-</div>
-<p></p>
-<div id="fileInfo">Arquivo selecionado: Nenhum</div>
+<div
+  class="w-screen h-screen flex flex-col justify-center items-center space-y-4"
+>
+  <header class="space-y-2">
+    <h1 class="text-lg">Import - Export Save to/from Cloud</h1>
+    <input
+      class="w-96"
+      type="text"
+      id="fileName"
+      placeholder="Digite o nome do save"
+    />
+  </header>
 
+  <div id="fileInfo">Arquivo selecionado: Nenhum</div>
 
-<div style="display: flex; justify-content: center;">
-  <button (click)="importarNuvem()">Importar da Nuvem</button>
-  <button (click)="exportarNuvem()">Exportar para Nuvem</button>
-  <button (click)="test()">teste</button>
-
-</div>
-<div style="display: flex; justify-content: center;">
-  <button (click)="importarLocal()">Importar Local</button>
-  <button (click)="exportarLocal()">Exportar Local</button>
+  <div class="flex justify-center space-x-2">
+    <button (click)="importarNuvem()">Importar da Nuvem</button>
+    <button (click)="exportarNuvem()">Exportar para Nuvem</button>
+    <button (click)="test()">teste</button>
+  </div>
+  <div class="flex justify-center space-x-2">
+    <button (click)="importarLocal()">Importar Local</button>
+    <button (click)="exportarLocal()">Exportar Local</button>
+  </div>
 </div>
